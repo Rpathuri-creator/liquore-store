@@ -97,7 +97,7 @@
 
         const formData = new FormData(form);
         const data = new URLSearchParams(formData);
-
+        console.log(data)
         fetch('https://script.google.com/macros/s/AKfycbzvhk21EJKGEAJfXnhHn13O-LKAGSkL2576CoolIO47h88im_5oEehkrDwepWn9hBeP_A/exec', {
             method: 'POST',
             body: data
