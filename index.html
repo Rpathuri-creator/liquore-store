@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ten-K Liquor</title>
+    <meta name="description" content="Ten-K Liquor: Your premier destination in Hastings for a wide selection of spirits, wines, and beers. Find great deals, cocktail recipes, and more!">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -51,6 +53,87 @@
             cursor: pointer;
         }
     </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ten-K Liquor",
+            "image": "ChatGPT Image Apr 27, 2025, 07_36_02 PM.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1355 S Frontage Rd Suite 330",
+                "addressLocality": "Hastings",
+                "addressRegion": "MN",
+                "postalCode": "55033",
+                "addressCountry": "US"
+            },
+            "telephone": "651-437-3363",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "22:00"
+                }
+            ],
+            "url": "http://www.yourtenkliquorwebsite.com" }
+    </script>
+    <!--
+      SEO Improvement: Additional Schema.org Considerations
+      - Product Schema: For each product category (Beer, Spirits, Wines), you could add Product schema.
+        Example for Beer:
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Product",
+          "name": "Beer Selection",
+          "description": "Explore our wide selection of craft, domestic, and imported beers, from refreshing lagers to rich stouts. Find your perfect brew for any taste.",
+          "image": "https://placehold.co/600x300/87CEEB/FFFFFF?text=Beer+Selection",
+          "brand": {
+            "@type": "Brand",
+            "name": "Various Brands"
+          }
+        }
+        </script>
+        (Repeat for Spirits and Wines)
+
+      - Recipe Schema: For the dynamically generated cocktail recipes, you would typically add Recipe schema
+        when the recipe is displayed on a dedicated page or if you have a backend
+        that generates static recipe pages. Since these are generated client-side
+        via LLM, direct static HTML schema isn't feasible for each dynamic result.
+        If you were to store these recipes or have a dedicated recipe page,
+        you would add schema like:
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Recipe",
+          "name": "Mojito",
+          "image": "https://example.com/images/mojito.jpg",
+          "description": "A classic Cuban highball.",
+          "recipeIngredient": [
+            "2 oz White Rum",
+            "1 oz Fresh Lime Juice",
+            "2 tsp Sugar",
+            "6-8 Fresh Mint Leaves",
+            "Soda Water"
+          ],
+          "recipeInstructions": [
+            "Muddle mint leaves with sugar and lime juice.",
+            "Add rum and ice.",
+            "Top with soda water and stir gently."
+          ]
+        }
+        </script>
+    -->
 </head>
 <body class="bg-gray-50 text-gray-800">
 <nav class="bg-white shadow-md rounded-b-lg">
@@ -59,7 +142,7 @@
              If running locally, ensure 'ChatGPT Image Apr 27, 2025, 07_36_02 PM.jpg' is in the same directory.
              For online preview, replace 'ChatGPT Image Apr 27, 2025, 07_36_02 PM.jpg' with a direct URL to the hosted image. -->
         <a href="#" class="mb-4 md:mb-0">
-            <img src="ChatGPT Image Apr 27, 2025, 07_36_02 PM.jpg" alt="Ten-K Liquor Logo" class="h-10 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/150x40/0000FF/FFFFFF?text=Ten-K+Liquor';">
+            <img src="ChatGPT Image Apr 27, 2025, 07_36_02 PM.jpg" alt="Ten-K Liquor Logo - Your premier liquor store in Hastings, MN" class="h-10 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/150x40/0000FF/FFFFFF?text=Ten-K+Liquor';">
         </a>
         <div class="flex flex-wrap justify-center space-x-4 md:space-x-6">
             <a href="#banner" class="text-blue-600 hover:text-red-600 font-semibold py-2 px-3 rounded-md transition duration-300 ease-in-out">Home</a>
@@ -76,40 +159,40 @@
          style="background-image: url('https://placehold.co/1200x400/0000FF/FFFFFF?text=Welcome+to+Ten-K+Liquor');">
     <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
     <div class="container mx-auto h-full flex items-center justify-center p-4">
-        <h1 class="text-white text-4xl md:text-6xl font-extrabold text-center leading-tight drop-shadow-lg">Welcome to Ten-K Liquor</h1>
+        <h1 class="text-white text-4xl md:text-6xl font-extrabold text-center leading-tight drop-shadow-lg">Welcome to Ten-K Liquor: Your Local Experts in Spirits, Wine & Beer</h1>
     </div>
 </section>
 
 <section id="about" class="bg-blue-50 container mx-auto px-6 py-16 rounded-lg shadow-md my-8">
-    <h2 class="text-4xl font-bold text-blue-800 mb-6 text-center">About Us</h2>
+    <h2 class="text-4xl font-bold text-blue-800 mb-6 text-center">About Ten-K Liquor: Your Premier Destination</h2>
     <p class="text-lg leading-relaxed text-blue-700 text-center max-w-3xl mx-auto">
-        Ten-K Liquor is your premier destination for a curated selection of spirits, wines, and beers. Our mission is to provide quality products at great prices, paired with exceptional customer service. We are committed to helping you find exactly what you need for any occasion.
+        Ten-K Liquor is your premier destination in Hastings, Minnesota, for a thoughtfully curated selection of fine spirits, exquisite wines, and a diverse range of craft and imported beers. Our unwavering mission is to provide high-quality products at competitive prices, all while delivering exceptional customer service. We are deeply committed to helping you discover exactly what you need, whether it's for a special occasion, a quiet evening, or stocking your home bar.
     </p>
 </section>
 
 <section id="products" class="bg-white py-16 rounded-lg shadow-md my-8">
     <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center">Our Products</h2>
+        <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center">Explore Our Extensive Product Range</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://placehold.co/600x300/87CEEB/FFFFFF?text=Beer+Selection" alt="Beer" class="w-full h-48 object-cover object-center">
+                <img src="https://placehold.co/600x300/87CEEB/FFFFFF?text=Craft+Beer+Selection" alt="Discover our wide selection of craft, domestic, and imported beers" class="w-full h-48 object-cover object-center">
                 <div class="p-6">
-                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Beer</h3>
-                    <p class="mt-2 text-gray-700 leading-relaxed">Explore our wide selection of craft, domestic, and imported beers, from refreshing lagers to rich stouts. Find your perfect brew for any taste.</p>
+                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Beer: Craft, Domestic & Imported</h3>
+                    <p class="mt-2 text-gray-700 leading-relaxed">Dive into our extensive selection of craft, domestic, and imported beers. From crisp lagers and hoppy IPAs to rich stouts and unique seasonal brews, we have the perfect beer to satisfy every palate and occasion.</p>
                 </div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://placehold.co/600x300/4682B4/FFFFFF?text=Premium+Spirits" alt="Spirits" class="w-full h-48 object-cover object-center">
+                <img src="https://placehold.co/600x300/4682B4/FFFFFF?text=Premium+Spirits+Collection" alt="Explore our premium vodkas, whiskies, and gins" class="w-full h-48 object-cover object-center">
                 <div class="p-6">
-                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Spirits</h3>
-                    <p class="mt-2 text-gray-700 leading-relaxed">Discover premium vodkas, whiskies, gins, rums, and more. Our diverse range caters to every connoisseur and cocktail enthusiast.</p>
+                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Spirits: Premium & Diverse</h3>
+                    <p class="mt-2 text-gray-700 leading-relaxed">Elevate your home bar with our diverse range of premium spirits. Discover top-shelf vodkas, aged whiskies, artisanal gins, smooth rums, and much more. Perfect for classic cocktails or enjoying neat.</p>
                 </div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://placehold.co/600x300/CD5C5C/FFFFFF?text=Fine+Wines" alt="Wines" class="w-full h-48 object-cover object-center">
+                <img src="https://placehold.co/600x300/CD5C5C/FFFFFF?text=Fine+Wine+Collection" alt="Select from our curated collection of red, white, and rosé wines" class="w-full h-48 object-cover object-center">
                 <div class="p-6">
-                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Wines</h3>
-                    <p class="mt-2 text-gray-700 leading-relaxed">Select from our curated collection of red, white, and rosé wines, perfect for pairing with meals or enjoying on their own. Explore new favorites!</p>
+                    <h3 class="font-bold text-2xl text-blue-800 mb-2">Wines: Red, White & Rosé</h3>
+                    <p class="mt-2 text-gray-700 leading-relaxed">Select from our expertly curated collection of red, white, and rosé wines. Whether you're seeking a bold Cabernet, a crisp Sauvignon Blanc, or a refreshing rosé, our selection is perfect for pairing with meals or savoring on its own.</p>
                 </div>
             </div>
         </div>
@@ -117,7 +200,7 @@
 </section>
 
 <section id="deals" class="container mx-auto px-6 py-16 bg-blue-100 rounded-lg shadow-md my-8">
-    <h2 class="text-4xl font-bold text-blue-800 mb-8 text-center">Current Deals</h2>
+    <h2 class="text-4xl font-bold text-blue-800 mb-8 text-center">Current Exclusive Deals</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-blue-200 p-6 rounded-xl shadow-md border border-blue-300">
             <h3 class="font-bold text-xl text-blue-800 mb-2">Deal 1: 10% off select wines</h3>
@@ -152,7 +235,7 @@
     <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
             <h2 class="text-5xl font-extrabold text-blue-800 mb-6 leading-tight">COME VISIT US!</h2>
-            <p class="text-lg text-gray-700 mb-4">Conveniently located next to Roosters—stop in for your favorite beer, wine, and spirits.</p>
+            <p class="text-lg text-gray-700 mb-2">Conveniently located next to Roosters—stop in for your favorite beer, wine, and spirits.</p>
             <p class="text-lg text-gray-700 mb-8 font-semibold">Open 7 days a week for your convenience.</p>
 
             <div class="flex items-center mb-6">
@@ -207,7 +290,6 @@
 <script>
     // Carousel Script
     (function() {
-        // Array of image URLs for the banner carousel. Using placeholder images for demonstration.
         const images = [
             'https://placehold.co/1200x400/0000FF/FFFFFF?text=Welcome+to+Ten-K+Liquor+1',
             'https://placehold.co/1200x400/FF0000/FFFFFF?text=Great+Deals+Here',
@@ -215,30 +297,27 @@
             'https://placehold.co/1200x400/800080/FFFFFF?text=Visit+Us+Today',
             'https://placehold.co/1200x400/FFA500/FFFFFF?text=Quality+Products'
         ];
-        let index = 0; // Current image index
-        const banner = document.getElementById('banner'); // Get the banner element
+        let index = 0;
+        const banner = document.getElementById('banner');
 
-        // Set interval to change banner image every 5 seconds
         setInterval(() => {
-            index = (index + 1) % images.length; // Cycle through images
-            banner.style.backgroundImage = `url('${images[index]}')`; // Update background image
-        }, 5000); // 5000 milliseconds = 5 seconds
+            index = (index + 1) % images.length;
+            banner.style.backgroundImage = `url('${images[index]}')`;
+        }, 5000);
     })();
 
-    // Cocktail Recipe Generator Script
+    // Shared Modal Function
+    function showModalMessage(message) {
+        document.getElementById('modalMessage').textContent = message;
+        document.getElementById('messageModal').style.display = 'flex';
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
+        // Cocktail Recipe Generator Script
         const generateCocktailsBtn = document.getElementById('generateCocktailsBtn');
         const ingredientsInput = document.getElementById('ingredientsInput');
         const cocktailResults = document.getElementById('cocktailResults');
         const loadingIndicator = document.getElementById('loadingIndicator');
-        const messageModal = document.getElementById('messageModal');
-        const modalMessage = document.getElementById('modalMessage');
-
-        // Function to show a message in the modal
-        function showModalMessage(message) {
-            modalMessage.textContent = message;
-            messageModal.style.display = 'flex';
-        }
 
         generateCocktailsBtn.addEventListener('click', async () => {
             const ingredients = ingredientsInput.value.trim();
@@ -248,12 +327,11 @@
                 return;
             }
 
-            loadingIndicator.classList.remove('hidden'); // Show loading indicator
-            cocktailResults.innerHTML = ''; // Clear previous results
+            loadingIndicator.classList.remove('hidden');
+            cocktailResults.innerHTML = '';
 
             try {
                 let chatHistory = [];
-                // Prompt for the LLM to generate cocktail recipes in a structured JSON format
                 const prompt = `Generate 3 cocktail recipes using the following ingredients: ${ingredients}. For each recipe, provide the cocktail name, a list of ingredients with quantities, and step-by-step instructions. The output should be a JSON array of objects, where each object has 'name', 'ingredients' (an array of strings), and 'instructions' (an array of strings).`;
 
                 chatHistory.push({ role: "user", parts: [{ text: prompt }] });
@@ -283,7 +361,7 @@
                     }
                 };
 
-                const apiKey = "AIzaSyBBS4jkPNyfdA_QaeTWOwNKAatyU-7SvV8"; // Canvas will automatically provide the API key at runtime
+                const apiKey = "AIzaSyBBS4jkPNyfdA_QaeTWOwNKAatyU-7SvV8"; // Replace with your actual Gemini API key for deployment
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
@@ -330,9 +408,9 @@
                 }
             } catch (error) {
                 console.error('Error generating cocktail recipes:', error);
-                showModalMessage(`Failed to generate recipes: ${error.message}. Please try again.`);
+                showModalMessage(`Failed to generate recipes: ${error.message || 'An unknown error occurred. Please check your API key and network connection.'}. Please try again.`);
             } finally {
-                loadingIndicator.classList.add('hidden'); // Hide loading indicator
+                loadingIndicator.classList.add('hidden');
             }
         });
     });
